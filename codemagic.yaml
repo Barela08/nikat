@@ -7,8 +7,8 @@ workflows:
       vars:
         EXPO_TOKEN: $EXPO_TOKEN
     scripts:
-      - npm ci
-      - npm install -g eas-cli
+      - npm install
+      - npm install -g expo-cli eas-cli
       - export EXPO_TOKEN=$EXPO_TOKEN
       - eas build -p android --profile preview --non-interactive
     artifacts:
