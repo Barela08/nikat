@@ -1,0 +1,4 @@
+{
+  "name": ".gitignore",
+  "content": "node_modules/\n.expo/\ndist/\nnpm-debug.*\n*.jks\n*.p8\n*.p12\n*.key\n*.mobileprovision\n*.orig.*\nweb-build/\n.env\n.env.local\n"
+}
