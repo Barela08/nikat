@@ -5,23 +5,10 @@
         "buildType": "apk"
       }
     },
-    "preview2": {
-      "android": {
-        "buildType": "apk"
-      }
-    },
-    "preview3": {
-      "android": {
-        "buildType": "apk"
-      }
-    },
     "production": {
       "android": {
-        "buildType": "apk"
+        "buildType": "app-bundle"
       }
     }
-  },
-  "submit": {
-    "production": {}
   }
 }

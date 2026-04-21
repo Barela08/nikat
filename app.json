@@ -42,8 +42,12 @@
           "icon": "./src/assets/notification-icon.png",
           "color": "#4CAF50"
         }
-      ]
+      ],
+      "expo-font"
     ],
+    "cli": {
+      "appVersionSource": "remote"
+    },
     "extra": {
       "eas": {
         "projectId": "56d293a9-a045-4922-b7ab-8153d1d13c75"

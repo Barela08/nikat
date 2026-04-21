@@ -1,1 +1,7 @@
-{}
+{
+  "projects": {
+    "default": "nikat-9bf1b"
+  },
+  "targets": {},
+  "etags": {}
+}

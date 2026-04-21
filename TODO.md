@@ -1,10 +1,25 @@
-# NIKAT Project TODO
+# NIKAT Codemagic Expo APK Build TODO
 
-## Plan Steps:
-- [x] Create codemagic.yaml
-- [x] Install dependencies (npm install) - completed with minor warnings
-- [x] Validate local run (npx expo start) - server started successfully, cache issue noted but Codemagic will handle fresh env
-- [x] Git add/commit/push
-- [ ] Test EAS build locally if possible
+## Completed:
+- [x] Updated codemagic.yaml: Fixed npm ci → npm install
 
-All steps completed. Project fixed, codemagic.yaml added and pushed to GitHub.
+## Next Steps:
+- [ ] Add EXPO_TOKEN to Codemagic Dashboard → Settings → Environment Variables
+  - Name: EXPO_TOKEN
+  - Value: your_expo_token_here (get from `eas login` or Expo dashboard)
+- [ ] Git commit/push:
+  ```
+  git add codemagic.yaml TODO.md
+  git commit -m "Fixed Codemagic build: npm ci → npm install, updated TODO"
+  git push
+  ```
+- [ ] In Codemagic:
+  - Go to app dashboard
+  - Click \"Check for configuration files\"
+  - Select expo-eas-build workflow
+  - Start new build
+- [ ] Download APK from Artifacts once build succeeds
+
+**Security:** Token stored securely in Codemagic env vars (not hardcoded).
+
+**Expected Result:** Successful Android APK build via EAS preview profile.
