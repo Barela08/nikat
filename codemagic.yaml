@@ -3,9 +3,9 @@ workflows:
     name: Expo Android Build
     max_build_duration: 60
     environment:
+      groups:
+        - default   # 🔥 YE LINE MOST IMPORTANT
       node: latest
-      vars:
-        EXPO_TOKEN: $EXPO_TOKEN
     scripts:
       - npm install
       - npm install -g expo-cli eas-cli
