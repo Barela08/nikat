@@ -5,11 +5,10 @@ workflows:
     environment:
       node: latest
       vars:
-        EXPO_TOKEN: $EXPO_TOKEN  # Set this in Codemagic app variables
+        EXPO_TOKEN: $EXPO_TOKEN
     scripts:
-      - npm install
+      - npm ci
       - npm install -g eas-cli
-      - eas login --non-interactive
       - eas build -p android --profile preview --non-interactive
     artifacts:
-      - build/**
+      - build/**/*.apk
